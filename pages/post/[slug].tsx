@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import sanityClient, { urlFor } from '../../Sanity';
+import sanityClient, { urlFor } from '../../sanity';
 import { GetStaticProps } from 'next';
 import PortableText from 'react-portable-text';
 import { useForm, SubmitHandler } from 'react-hook-form';
