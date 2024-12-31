@@ -15,7 +15,7 @@ export default function Home({ posts }: Props) {
   return (
     <div>
       <Head>
-        <title>My Blog | Explore the New Horizon</title>
+        <title>CryptoBlog</title>
         <link rel="icon" href="/smallLogo.ico" />
       </Head>
 

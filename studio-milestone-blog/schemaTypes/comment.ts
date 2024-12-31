@@ -1,3 +1,5 @@
+import { Rule } from 'sanity';
+
 export default {
   name: 'clientComment',
   type: 'document',
@@ -8,21 +10,21 @@ export default {
       type: 'string',
       title: 'Comment Text',
       description: 'The text of the client comment.',
-      validation: (Rule) => Rule.required().min(5).max(500),
+      validation: (Rule: Rule) => Rule.required().min(5).max(500),
     },
     {
       name: 'clientName',
       type: 'string',
       title: 'Client Name',
       description: 'Name of the client who submitted the comment.',
-      validation: (Rule) => Rule.required().min(2).max(100),
+      validation: (Rule: Rule) => Rule.required().min(2).max(100),
     },
     {
       name: 'email',
       type: 'email',
       title: 'Client Email',
       description: 'Email address of the client.',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: Rule) => Rule.required(),
     },
     {
       name: 'approved',
@@ -36,7 +38,7 @@ export default {
       type: 'datetime',
       title: 'Submission Date',
       description: 'The date and time the comment was submitted.',
-      validation: (Rule) => Rule.required(),
+      validation: (Rule: Rule) => Rule.required(),
     },
     {
       name: 'additionalNotes',
