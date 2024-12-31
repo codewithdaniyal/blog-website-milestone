@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "skipLibCheck": true
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -6,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@portabletext/editor": "^1.18.7",
     "@portabletext/react": "^3.2.0",
     "@sanity/client": "^6.24.1",
     "@sanity/icons": "^3.5.3",
@@ -28,6 +32,6 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.2.4",
-    "typescript": "4.9.4"
+    "typescript": "^5.7.2"
   }
 }
